@@ -30,7 +30,7 @@
               "tabId": "",
               "boxShadow": "NONE",
               "widgetName": "tmdb_footer",
-              "borderColor": "#E0DEDE",
+              "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
               "isCanvas": true,
               "displayName": "Container",
               "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
@@ -51,6 +51,9 @@
               "dynamicBindingPathList": [
                 {
                   "key": "backgroundColor"
+                },
+                {
+                  "key": "borderColor"
                 }
               ],
               "children": [
@@ -228,7 +231,7 @@
               "tabId": "",
               "boxShadow": "NONE",
               "widgetName": "footer",
-              "borderColor": "#E0DEDE",
+              "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
               "isCanvas": true,
               "displayName": "Container",
               "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
@@ -249,6 +252,9 @@
               "dynamicBindingPathList": [
                 {
                   "key": "backgroundColor"
+                },
+                {
+                  "key": "borderColor"
                 }
               ],
               "children": [
@@ -329,7 +335,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "fontSize": "1rem"
+                      "fontSize": "1.25rem"
                     },
                     {
                       "widgetName": "description",
