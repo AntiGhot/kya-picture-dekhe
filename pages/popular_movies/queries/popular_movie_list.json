@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "home",
+    "pageId": "popular_movies",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -44,7 +44,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "home_popular_movie_list",
+  "id": "popular_movies_popular_movie_list",
   "deleted": false,
   "gitSyncId": "6357e6310e05b60ea4e7f043_6357f5cb561dcd1ffe6d0bb5"
 }

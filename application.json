@@ -1,11 +1,11 @@
 {
   "pages": [
     {
-      "id": "attributions",
+      "id": "home",
       "isDefault": false
     },
     {
-      "id": "home",
+      "id": "popular_movies",
       "isDefault": true
     }
   ],

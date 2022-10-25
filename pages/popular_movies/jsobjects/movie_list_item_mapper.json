@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
     "name": "movie_list_item_mapper",
-    "pageId": "home",
+    "pageId": "popular_movies",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -10,7 +10,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "home_movie_list_item_mapper",
+  "id": "popular_movies_movie_list_item_mapper",
   "deleted": false,
   "gitSyncId": "6357e6310e05b60ea4e7f043_6357f6d2561dcd1ffe6d0bca"
 }
