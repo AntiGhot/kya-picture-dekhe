@@ -2,11 +2,11 @@
   "pages": [
     {
       "id": "home",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "popular_movies",
-      "isDefault": true
+      "isDefault": false
     }
   ],
   "viewMode": false,

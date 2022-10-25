@@ -39,7 +39,7 @@
                 "parent",
                 "group"
               ],
-              "topRow": 50,
+              "topRow": 47,
               "bottomRow": 66,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
@@ -407,8 +407,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 32,
-              "bottomRow": 42,
+              "topRow": 30,
+              "bottomRow": 40,
               "parentRowSpace": 10,
               "type": "ICON_BUTTON_WIDGET",
               "hideCard": false,
