@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "movies_details_helper",
+    "pageId": "popular_movies",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\n\n\tgetYoutubeTrailerLink:  () => {\n\n\t\tvar res = movie_videos.data\n\t\tvar arr =  res.results\n\t\t//for now only getting and check the first item \n\t\t// todo iterate in all array elements for check\n\t\tif (arr.length > 0 && arr[0].site == \"YouTube\"){\n\t\t\treturn \"https://www.youtube.com/watch?v=\" + arr[0].key\n\t\t}\n\t\treturn undefined\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "popular_movies_movies_details_helper",
+  "deleted": false,
+  "gitSyncId": "6357e6310e05b60ea4e7f043_635802e2ce88f900dbd02521"
+}
