@@ -2,6 +2,10 @@
   "pages": [
     {
       "id": "attributions",
+      "isDefault": false
+    },
+    {
+      "id": "home",
       "isDefault": true
     }
   ],
