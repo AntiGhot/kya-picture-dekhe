@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 620,
+          "bottomRow": 630,
           "containerStyle": "none",
           "snapRows": 62,
           "parentRowSpace": 1,
@@ -43,7 +43,7 @@
               "animateLoading": true,
               "parentColumnSpace": 12.3125,
               "dynamicTriggerPathList": [],
-              "leftColumn": 16,
+              "leftColumn": 15,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -55,7 +55,7 @@
               "borderWidth": 1,
               "key": "0gj9ulxtwb",
               "isDeprecated": false,
-              "rightColumn": 49,
+              "rightColumn": 50,
               "widgetId": "6m0ms7u097",
               "isVisible": true,
               "version": 1,
