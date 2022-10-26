@@ -930,7 +930,7 @@
                       },
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "widgetName": "movie_item_keywords",
-                      "listData": "{{appsmith.store[movies_details_helper.MOVIE_ITEM_SIMILAR_MOVIES]}}",
+                      "listData": "{{appsmith.store[movies_details_helper.MOVIE_ITEM_KEYWORDS]}}",
                       "isCanvas": true,
                       "displayName": "List",
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
