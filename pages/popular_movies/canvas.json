@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 670,
+          "bottomRow": 720,
           "containerStyle": "none",
           "snapRows": 62,
           "parentRowSpace": 1,
@@ -177,8 +177,8 @@
               "dynamicPropertyPathList": [],
               "displayName": "List",
               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-              "topRow": 0,
-              "bottomRow": 59,
+              "topRow": 5,
+              "bottomRow": 64,
               "parentRowSpace": 10,
               "onPageChange": "{{popular_movie_list.run()}}",
               "type": "LIST_WIDGET",
@@ -194,7 +194,7 @@
                   "key": "onListItemClick"
                 }
               ],
-              "leftColumn": 5,
+              "leftColumn": 3,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -621,7 +621,7 @@
               "key": "sntaal3rlq",
               "backgroundColor": "transparent",
               "isDeprecated": false,
-              "rightColumn": 62,
+              "rightColumn": 60,
               "onListItemClick": "{{movies_details_helper.getMovieItemDetails()}}",
               "itemBackgroundColor": "#fefce8",
               "widgetId": "zkw7hcaq3f",
@@ -669,7 +669,7 @@
                   "widgetName": "Canvas4",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 730,
+                  "bottomRow": 780,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -737,7 +737,7 @@
                         "label"
                       ],
                       "topRow": 0,
-                      "bottomRow": 5,
+                      "bottomRow": 4,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -782,8 +782,8 @@
                       "widgetName": "banner",
                       "displayName": "Image",
                       "iconSVG": "/static/media/icon.52d8fb963abcb95c79b10f1553389f22.svg",
-                      "topRow": 5,
-                      "bottomRow": 18,
+                      "topRow": 4,
+                      "bottomRow": 17,
                       "parentRowSpace": 10,
                       "type": "IMAGE_WIDGET",
                       "hideCard": false,
@@ -833,8 +833,8 @@
                       "searchTags": [
                         "youtube"
                       ],
-                      "topRow": 18,
-                      "bottomRow": 44,
+                      "topRow": 17,
+                      "bottomRow": 43,
                       "parentRowSpace": 10,
                       "type": "VIDEO_WIDGET",
                       "hideCard": false,
@@ -930,12 +930,12 @@
                       },
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "widgetName": "movie_item_keywords",
-                      "listData": "{{appsmith.store[movies_details_helper.MOVIE_ITEM_KEYWORDS]}}",
+                      "listData": "{{appsmith.store[movies_details_helper.MOVIE_ITEM_SIMILAR_MOVIES]}}",
                       "isCanvas": true,
                       "displayName": "List",
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-                      "topRow": 46,
-                      "bottomRow": 71,
+                      "topRow": 43,
+                      "bottomRow": 76,
                       "parentRowSpace": 10,
                       "type": "LIST_WIDGET",
                       "hideCard": false,
@@ -1193,7 +1193,7 @@
                       "key": "p7ejbke0j6",
                       "backgroundColor": "transparent",
                       "isDeprecated": false,
-                      "rightColumn": 27,
+                      "rightColumn": 29,
                       "itemBackgroundColor": "#FFFFFF",
                       "widgetId": "pgwc0a63rg",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1202,6 +1202,538 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                    },
+                    {
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "borderColor": "#E0DEDE",
+                      "isVisibleDownload": false,
+                      "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+                      "topRow": 44,
+                      "isSortable": true,
+                      "type": "TABLE_WIDGET_V2",
+                      "inlineEditingSaveOption": "ROW_LEVEL",
+                      "animateLoading": true,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "boxShadow"
+                        },
+                        {
+                          "key": "childStylesheet.button.buttonColor"
+                        },
+                        {
+                          "key": "childStylesheet.button.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.menuButton.menuColor"
+                        },
+                        {
+                          "key": "childStylesheet.menuButton.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.iconButton.buttonColor"
+                        },
+                        {
+                          "key": "childStylesheet.iconButton.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.editActions.saveButtonColor"
+                        },
+                        {
+                          "key": "childStylesheet.editActions.saveBorderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.editActions.discardButtonColor"
+                        },
+                        {
+                          "key": "childStylesheet.editActions.discardBorderRadius"
+                        },
+                        {
+                          "key": "tableData"
+                        },
+                        {
+                          "key": "primaryColumns.id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.adult.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.backdrop_path.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.genre_ids.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.original_language.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.original_title.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.overview.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.popularity.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.poster_path.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.release_date.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.title.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.video.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.vote_average.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.vote_count.computedValue"
+                        }
+                      ],
+                      "leftColumn": 30,
+                      "delimiter": ",",
+                      "defaultSelectedRowIndex": 0,
+                      "showInlineEditingOptionDropdown": true,
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisibleFilters": false,
+                      "isVisible": true,
+                      "enableClientSideSearch": false,
+                      "version": 1,
+                      "totalRecordsCount": 0,
+                      "isLoading": false,
+                      "childStylesheet": {
+                        "button": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "menuButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "iconButton": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "editActions": {
+                          "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        }
+                      },
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "defaultSelectedRowIndices": [
+                        0
+                      ],
+                      "widgetName": "similarmovies",
+                      "defaultPageSize": 0,
+                      "columnOrder": [
+                        "title",
+                        "id",
+                        "adult",
+                        "backdrop_path",
+                        "genre_ids",
+                        "original_language",
+                        "original_title",
+                        "overview",
+                        "popularity",
+                        "poster_path",
+                        "release_date",
+                        "video",
+                        "vote_average",
+                        "vote_count"
+                      ],
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Table",
+                      "bottomRow": 76,
+                      "columnWidthMap": {
+                        "task": 245,
+                        "step": 62,
+                        "status": 75
+                      },
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "parentColumnSpace": 6.9375,
+                      "dynamicTriggerPathList": [],
+                      "borderWidth": "1",
+                      "primaryColumns": {
+                        "id": {
+                          "allowCellWrapping": false,
+                          "index": 0,
+                          "width": 150,
+                          "originalId": "id",
+                          "id": "id",
+                          "alias": "id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "id",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{similarmovies.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+                          "validation": {}
+                        },
+                        "adult": {
+                          "allowCellWrapping": false,
+                          "index": 1,
+                          "width": 150,
+                          "originalId": "adult",
+                          "id": "adult",
+                          "alias": "adult",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "checkbox",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "adult",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{similarmovies.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"adult\"]))}}",
+                          "validation": {}
+                        },
+                        "backdrop_path": {
+                          "allowCellWrapping": false,
+                          "index": 2,
+                          "width": 150,
+                          "originalId": "backdrop_path",
+                          "id": "backdrop_path",
+                          "alias": "backdrop_path",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "backdrop_path",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{similarmovies.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"backdrop_path\"]))}}",
+                          "validation": {}
+                        },
+                        "genre_ids": {
+                          "allowCellWrapping": false,
+                          "index": 3,
+                          "width": 150,
+                          "originalId": "genre_ids",
+                          "id": "genre_ids",
+                          "alias": "genre_ids",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "genre_ids",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{similarmovies.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"genre_ids\"]))}}",
+                          "validation": {}
+                        },
+                        "original_language": {
+                          "allowCellWrapping": false,
+                          "index": 4,
+                          "width": 150,
+                          "originalId": "original_language",
+                          "id": "original_language",
+                          "alias": "original_language",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "original_language",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{similarmovies.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"original_language\"]))}}",
+                          "validation": {}
+                        },
+                        "original_title": {
+                          "allowCellWrapping": false,
+                          "index": 5,
+                          "width": 150,
+                          "originalId": "original_title",
+                          "id": "original_title",
+                          "alias": "original_title",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "original_title",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{similarmovies.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"original_title\"]))}}",
+                          "validation": {}
+                        },
+                        "overview": {
+                          "allowCellWrapping": false,
+                          "index": 6,
+                          "width": 150,
+                          "originalId": "overview",
+                          "id": "overview",
+                          "alias": "overview",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "overview",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{similarmovies.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"overview\"]))}}",
+                          "validation": {}
+                        },
+                        "popularity": {
+                          "allowCellWrapping": false,
+                          "index": 7,
+                          "width": 150,
+                          "originalId": "popularity",
+                          "id": "popularity",
+                          "alias": "popularity",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "popularity",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{similarmovies.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"popularity\"]))}}",
+                          "validation": {}
+                        },
+                        "poster_path": {
+                          "allowCellWrapping": false,
+                          "index": 8,
+                          "width": 150,
+                          "originalId": "poster_path",
+                          "id": "poster_path",
+                          "alias": "poster_path",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "poster_path",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{similarmovies.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"poster_path\"]))}}",
+                          "validation": {}
+                        },
+                        "release_date": {
+                          "allowCellWrapping": false,
+                          "index": 9,
+                          "width": 150,
+                          "originalId": "release_date",
+                          "id": "release_date",
+                          "alias": "release_date",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "date",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "release_date",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{similarmovies.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"release_date\"]))}}",
+                          "validation": {}
+                        },
+                        "title": {
+                          "allowCellWrapping": false,
+                          "index": 10,
+                          "width": 150,
+                          "originalId": "title",
+                          "id": "title",
+                          "alias": "title",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "similar movies",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{similarmovies.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}",
+                          "validation": {}
+                        },
+                        "video": {
+                          "allowCellWrapping": false,
+                          "index": 11,
+                          "width": 150,
+                          "originalId": "video",
+                          "id": "video",
+                          "alias": "video",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "checkbox",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "video",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{similarmovies.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"video\"]))}}",
+                          "validation": {}
+                        },
+                        "vote_average": {
+                          "allowCellWrapping": false,
+                          "index": 12,
+                          "width": 150,
+                          "originalId": "vote_average",
+                          "id": "vote_average",
+                          "alias": "vote_average",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "vote_average",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{similarmovies.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vote_average\"]))}}",
+                          "validation": {}
+                        },
+                        "vote_count": {
+                          "allowCellWrapping": false,
+                          "index": 13,
+                          "width": 150,
+                          "originalId": "vote_count",
+                          "id": "vote_count",
+                          "alias": "vote_count",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "vote_count",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{similarmovies.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vote_count\"]))}}",
+                          "validation": {}
+                        }
+                      },
+                      "key": "rn1fj18hzn",
+                      "isDeprecated": false,
+                      "rightColumn": 62,
+                      "textSize": "0.875rem",
+                      "widgetId": "ro9gum4ql8",
+                      "tableData": "{{appsmith.store[movies_details_helper.MOVIE_ITEM_SIMILAR_MOVIES]}}",
+                      "label": "Data",
+                      "searchKey": "",
+                      "parentId": "ypgcxjs7yx",
+                      "renderMode": "CANVAS",
+                      "horizontalAlignment": "LEFT",
+                      "isVisibleSearch": false,
+                      "isVisiblePagination": false,
+                      "verticalAlignment": "CENTER"
                     }
                   ],
                   "isDisabled": false,
@@ -1233,6 +1765,56 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "width": 456
+            },
+            {
+              "widgetName": "fetching_item_data",
+              "progressType": "linear",
+              "isCanvas": false,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "displayName": "Progress",
+              "iconSVG": "/static/media/icon.9b0d7b96a0223e8120bf6f14aca4154a.svg",
+              "searchTags": [
+                "percent"
+              ],
+              "topRow": 0,
+              "bottomRow": 4,
+              "parentRowSpace": 10,
+              "type": "PROGRESS_WIDGET",
+              "isIndeterminate": true,
+              "hideCard": false,
+              "fillColor": "{{appsmith.theme.colors.primaryColor}}",
+              "parentColumnSpace": 12.3125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 19,
+              "dynamicBindingPathList": [
+                {
+                  "key": "fillColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "key": "di1pagenia",
+              "showResult": false,
+              "isDeprecated": false,
+              "rightColumn": 47,
+              "counterClosewise": false,
+              "widgetId": "ixdqvh6qf3",
+              "isVisible": "{{appsmith.store[movies_details_helper.MOVIE_ITEM_FETCHING_DATA] == true}}",
+              "steps": 1,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "progress": "50"
             }
           ]
         },
