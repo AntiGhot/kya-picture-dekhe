@@ -6,8 +6,17 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\n\n\tgetYoutubeTrailerLink:  () => {\n\n\t\tvar res = movie_videos.data\n\t\tvar arr =  res.results\n\t\t//for now only getting and check the first item \n\t\t// todo iterate in all array elements for check\n\t\tif (arr.length > 0 && arr[0].site == \"YouTube\"){\n\t\t\treturn \"https://www.youtube.com/watch?v=\" + arr[0].key\n\t\t}\n\t\treturn undefined\n\t}\n}",
-    "variables": [],
+    "body": "export default {\n\n\tMOVIE_ITEM_YT_LINK : \"MOVIE_ITEM_YT_LINK\",\n\tMOVIE_ITEM_KEYWORDS : \"MOVIE_ITEM_KEYWORDS\",\n\n\tgetMovieItemDetails: async () => {\n\n\t\t// about Video Link\n\t\tvar res = await movie_videos.run({\"movie_id\": movies_popular.selectedItem.id})\n\t\tvar arr =  res.results\t\n\t\t// for now only getting and check the first item \n\t\t// TODO iterate in all array elements for check\n\t\tif (arr.length > 0 && arr[0].site == \"YouTube\"){\n\t\t\tawait storeValue( movies_details_helper.MOVIE_ITEM_YT_LINK , \"https://www.youtube.com/watch?v=\" + arr[0].key)\n\t\t}\n\n\t\t// about keywords\n\t\tvar kres = await movie_keywords.run({\"movie_id\": movies_popular.selectedItem.id})\n    await storeValue( movies_details_helper.MOVIE_ITEM_KEYWORDS , kres.keywords)\n\t\t// TODO can store other details in the appsmithstore\n\n\t\t// showing modal for this movie item // having its details\n\t\tshowModal(\"movie_item_details\")\n\t\treturn undefined\n\t}\n}",
+    "variables": [
+      {
+        "name": "MOVIE_ITEM_YT_LINK",
+        "value": "\"MOVIE_ITEM_YT_LINK\""
+      },
+      {
+        "name": "MOVIE_ITEM_KEYWORDS",
+        "value": "\"MOVIE_ITEM_KEYWORDS\""
+      }
+    ],
     "userPermissions": []
   },
   "id": "popular_movies_movies_details_helper",

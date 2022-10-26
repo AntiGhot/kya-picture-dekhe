@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "movie_videos",
+    "name": "movie_keywords",
     "datasource": {
       "name": "tmdb datasource",
       "pluginId": "restapi-plugin",
@@ -17,7 +17,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/movie/{{this.params.movie_id}}/videos",
+      "path": "/movie/{{this.params.movie_id}}/keywords",
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
@@ -50,7 +50,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "popular_movies_movie_videos",
+  "id": "popular_movies_movie_keywords",
   "deleted": false,
-  "gitSyncId": "6357e6310e05b60ea4e7f043_63580258561dcd1ffe6d0d32"
+  "gitSyncId": "6357e6310e05b60ea4e7f043_6358f43ece88f900dbd035bb"
 }
