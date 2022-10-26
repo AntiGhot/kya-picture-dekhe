@@ -7,6 +7,10 @@
     {
       "id": "popular_movies",
       "isDefault": false
+    },
+    {
+      "id": "readme",
+      "isDefault": false
     }
   ],
   "viewMode": false,
